@@ -1,0 +1,149 @@
+/*  
+*/
+/* IMPORTS ------------------------------------------------------------*/
+
+@import url('resize.css');
+
+/* GENERAL ------------------------------------------------------------*/
+
+html, body{ height: 100%; }
+
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #7a7e83;
+    background: #fff;
+}
+header,
+footer {
+    background: #282d34;
+}
+
+header,
+footer,
+section {
+    width:900px;
+    max-width:80%;
+}
+.logo{
+    position: absolute;
+    top: 42px;
+    left: 10px;
+}
+/* HEADLINE ------------------------------------------------------------*/
+
+#header #headline{
+    position: absolute;
+    overflow: hidden;
+    top: 80px;
+    right: 0px;
+    width: 700px;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-size: 24px;
+    line-height: 1.3em;
+    color: #d9e2ef;
+    font-weight: lighter;
+    z-index: 5;
+}
+
+
+#header #headline a{
+    color: #fff;
+}
+
+#header #headline.slides_container {
+    width:700px;
+}
+
+#header #headline .slides_container div {
+    width:700px;
+    display:block;
+}
+
+#header #headline .prev{
+    display: block;
+    float: left;
+    background:  url(../img/slides-prev.png) no-repeat;
+    width: 20px;
+    height: 12px;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-indent: -9000px;
+}
+
+#header #headline .next{
+    display: block;
+    float: left;
+    background:  url(../img/slides-next.png) no-repeat;
+    width: 20px;
+    height: 12px;
+    margin-top: 5px;
+    text-indent: -9000px;
+}
+
+/* NAVIGATION --------------------------------------------------------*/
+header nav {
+    background: #d2c389;
+}
+header nav>ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav div,
+header nav li {
+    display: inline-block;
+    padding: 20px 0;
+    border-right: 1px solid #fff;
+}
+
+header nav div a,
+header nav li a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 25px;
+}
+header nav div a:hover,
+header nav li a:hover{
+    background: #e3d4a0;
+}
+
+
+header nav form {
+    display: inline-block;
+    float: right;
+    padding: 15px 43px 15px 15px;
+    border-left: 1px solid #fff;
+    position: relative;
+}
+
+header nav form input{
+    font-size: 15px; 
+    background: #fff;
+    margin: 0;
+    border:0;
+    padding:5px;
+}
+header nav form input:focus {
+    outline: 0;  
+}
+.search-submit {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding:0;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    background: #d2c389 url(img/search.png) no-repeat;
+    color: #fff;
+
+}
+header nav form .search-submit:hover{
+    background: #e3d4a0 url(img/search.png) no-repeat;
+}
